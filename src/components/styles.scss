@@ -1,0 +1,233 @@
+.main-container {
+    background-color: white;
+    color: #000;
+    border-color: #000;
+    height: 100vh;
+    width: 100vw;
+    .top-cont {
+        width: 100%;
+        height: 10vh;
+        background-color: #fafdff;
+    }
+    .detail-cont {
+        display: flex;
+        height: 90vh;
+        .right-cont {
+            background-color: #d1deed;
+            width: 90vw;
+            .right-side-cont {
+                display: flex;
+                padding: 20px;
+                height: calc(100% - 40px);
+                .left-details {
+                    background-color: yellow;
+                    width: 30%;
+                    margin-right: 20px;
+                }
+                .right-details {
+                    width: calc(70% - 20px);
+                    .data-cont {
+                        height: 100%;
+                        .location-cont {
+                            background-color: paleturquoise;
+                            height: 40%;
+                            margin-bottom: 20px; 
+                            .map {
+                                height: 100%;
+                                .info-cont {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 300px;
+                                    align-items: start;
+                                    font-size: 14px;
+                                    .address-cont {
+                                        margin-top: 5px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        .hsp-add {
+                                            color: black;
+                                              p {
+                                                margin: 0;
+                                              }  
+                                        }
+
+                                    }
+                                    .time-cont {
+                                        p {
+                                            margin: 0;
+                                            color: #d1deed;
+                                            margin-left: 2px;
+                                          }
+                                    }
+                                }
+                            }
+                        }
+                        .appoin-cont {
+                            background-color: #dff0ff;
+                            height: calc(60% - 40px);
+                            padding: 20px;
+                            .appoint-lists {
+                                display: flex;
+                                flex-direction: column;
+                                .appoint-top {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    p{
+                                        font-weight: bold;
+                                    }
+                                    div {
+                                        width: 18px;
+                                        .Dots-dots-1 {
+                                            .MuiPaper-root {
+                                                background: gray !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                .appoint-mid {
+                                    display: flex;   
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    .appoint-button {
+                                        align-items: flex-start;
+                                        display: flex;
+                                        flex-direction: row;
+                                    }
+                                    .nav-ui {
+                                        align-items: center;
+                                        ul{
+                                              li:nth-child(2) {
+                                                  background-color: cadetblue;
+                                              }  
+                                        }
+                                    }
+                                    .sort-ui{
+                                        align-items: flex-end;
+                                        display: flex;
+                                        p {
+                                            margin: 0;
+                                        }
+                                        >p {
+                                            color: #d1deed;
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                                .appoint-card {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    .card-cont {
+                                        width: 300px;
+                                        background-color: white;
+                                        border: 1px solid #d1deed;
+                                        padding: 20px;
+                                        .card-address {
+                                            margin-top: 5px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            .card-hsp-add {
+                                                color: black;
+                                                  p {
+                                                    margin: 0;
+                                                  }  
+                                            }
+                                            .card-time {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                p {
+                                                    margin: 0;
+                                                    color: #d1deed;
+                                                }
+                                            }
+    
+                                        }
+                                        .card-button {
+                                            
+                                        }
+                                    }
+                                    
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        .left-cont {
+            // background-color: #f4faff;
+            background-color: gray;
+            width: 10vw;
+        }
+    }
+}
+
+.doc-cont {
+    width: 100%;
+    display: flex;
+    .MuiSvgIcon-fontSizeLarge {
+        font-size: 3.1875rem;
+    }
+    .design-cont{
+        flex-direction: row;
+        margin-left: 5px;
+        p:first-child {
+          margin-bottom: 0;
+          font-weight: bold;
+        }
+        p:nth-child(2) {
+            color: #d1deed;
+            margin-top: 0;
+        }  
+    }
+}
+
+.display-icon-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-ui {
+    button {
+        height:20px;
+        border-radius: 20px;
+        margin: 0;
+        margin-right: 10px;
+        >span {
+            font-weight: normal;
+            font-size: 10px;
+        }
+    }
+}
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    li {
+      display: inline-block;
+      background-color: white;
+      margin:0 15px;
+      border-radius: 50%;
+      
+      svg {
+        color: #000;
+        display: table-cell;
+        vertical-align: middle; 
+        text-align: center; 
+  
+        height: 100px;
+        width: 100px;   
+        
+        &, &:hover, &:active {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
