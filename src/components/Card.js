@@ -4,10 +4,23 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import LocationOnRoundedIcon from '@material-ui/icons/LocationOnRounded';
 import ScheduleTwoToneIcon from '@material-ui/icons/ScheduleTwoTone';
 import DateRangeTwoToneIcon from '@material-ui/icons/DateRangeTwoTone';
+import DoneIcon from '@material-ui/icons/Done';
+import CloseIcon from '@material-ui/icons/Close';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    button: {
+      margin: theme.spacing(1),
+      height: "12px"
+    },
+  }));
 
 function Card (props) {
     console.log(props);
     const selectedDoctor =props.doctor;
+    const classes = useStyles();
+
     return (
         <div className="card-cont">
             <div className="doc-cont"> 
@@ -36,6 +49,29 @@ function Card (props) {
                 </div>
                 </div>
             </div>
+            <div className="card-button">
+                <div className="button-ui">
+                        <Button
+                            variant="contained"
+                            color= "primary"
+                            className={classes.button}
+                            startIcon = {<DoneIcon/>}
+                        >
+                            confirm
+                        </Button>
+                    </div>
+                    <div className="button-ui">
+                        <Button className = "past-text"
+                            variant="contained"
+                            color= "secondary"
+                            className={classes.button}
+                            startIcon= {<CloseIcon/>}
+                        >
+                            Cancel
+                        </Button>
+                    </div>
+
+                </div>
             
         </div>
     )

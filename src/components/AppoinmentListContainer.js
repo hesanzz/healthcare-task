@@ -1,7 +1,7 @@
 import React from 'react';
 import "./styles.scss";
 import Dots from 'material-ui-dots'
-import IconLabelButtons from "./IconLabelButtons"
+// import IconLabelButtons from "./IconLabelButtons"
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ChevronRightTwoToneIcon from '@material-ui/icons/ChevronRightTwoTone';
@@ -67,7 +67,7 @@ export default function AppoinmentListContainer () {
                         <Button
                             variant="contained"
                             color= "primary"
-                            className={classes.button}
+                            // className={classes.button}
                         >
                             Upcoming
                         </Button>

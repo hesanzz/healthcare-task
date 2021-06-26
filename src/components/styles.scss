@@ -8,6 +8,32 @@
         width: 100%;
         height: 10vh;
         background-color: #fafdff;
+        .header-cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .appoinment-button {
+                margin-top: 20px;
+                margin-left: 10vw;
+                .button-ui button {
+                    height: 40px;
+                    border-radius: 4px;
+                }
+            }
+            .profile-details {
+                .display-profile-icons {
+                    display: flex;
+                    width: 250px;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 25px;
+                    margin-right: 20px;
+                    >p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
     }
     .detail-cont {
         display: flex;
@@ -20,9 +46,31 @@
                 padding: 20px;
                 height: calc(100% - 40px);
                 .left-details {
-                    background-color: yellow;
                     width: 30%;
                     margin-right: 20px;
+                    .update-cont {
+                        display: flex;
+                        flex-direction: column;
+                        .notify-cont {
+                            .notification-cont {
+                                .notify-details {
+                                    width: 100%;
+                                    border: 1px solid grey;
+                                    height: 100px;
+                                    border-radius: 2px;
+                                    background-color: cyan;
+                                    margin-bottom: 20px;
+                                }
+                                .calceled-details {
+                                    width: 100%;
+                                    border: 1px solid grey;
+                                    height: 100px;
+                                    background-color: lightcoral;
+                                    border-radius: 2px;
+                                }
+                            }
+                        }
+                    }
                 }
                 .right-details {
                     width: calc(70% - 20px);
@@ -69,8 +117,10 @@
                             height: calc(60% - 40px);
                             padding: 20px;
                             .appoint-lists {
+                                height: calc(100% - 40px);
                                 display: flex;
                                 flex-direction: column;
+                                justify-content: space-between;
                                 .appoint-top {
                                     display: flex;
                                     flex-direction: row;
@@ -91,6 +141,8 @@
                                     display: flex;   
                                     flex-direction: row;
                                     justify-content: space-between;
+                                    // margin-top: 20px;
+                                    margin-bottom: 20px;
                                     .appoint-button {
                                         align-items: flex-start;
                                         display: flex;
@@ -120,8 +172,9 @@
                                     display: flex;
                                     flex-direction: row;
                                     justify-content: space-between;
+                                    height: inherit;
                                     .card-cont {
-                                        width: 300px;
+                                        width: 200px;
                                         background-color: white;
                                         border: 1px solid #d1deed;
                                         padding: 20px;
@@ -147,9 +200,19 @@
     
                                         }
                                         .card-button {
-                                            
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            .button-ui:last-child {
+                                                button {
+                                                margin: 0 !important;
+                                                }
+                                            }
                                         }
                                     }
+                                    // .card-cont :not(:first-child) {
+                                    //     margin-left: 10px;
+                                    // }
                                     
                                 }
                             }
@@ -160,9 +223,16 @@
             }
         }
         .left-cont {
-            // background-color: #f4faff;
-            background-color: gray;
+            background-color: #f4faff;
             width: 10vw;
+            .left-nav-cont {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: calc(100% - 40px);
+                padding: 20px 0;
+            }
         }
     }
 }
